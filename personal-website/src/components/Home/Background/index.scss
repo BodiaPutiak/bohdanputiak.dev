@@ -1,0 +1,113 @@
+@import '../../../colors.scss';
+
+$h: 300px;
+$w: 300px;
+.bubble-container {
+    @keyframes animate {
+        0% {
+            opacity: 1;
+            transform: translateY(0) rotate(0deg);
+        }
+    
+        100% {
+            opacity: 0;
+            transform: translateY(-1000px) rotate(720deg);
+        }
+    }
+    .bubble1 {
+        z-index: -2;
+        position: absolute;
+        height: $h;
+        width: $w;
+        border-radius: 50%;
+        background: linear-gradient(45deg, $primary-color, $background-color);
+        bottom: -30%;
+        left: 10%;
+        animation: animate 14s 1s infinite;
+    }
+
+    .bubble2 {
+        z-index: -2;
+        position: absolute;
+        height: $h;
+        width: $w;
+        border-radius: 50%;
+        background: linear-gradient(45deg, $primary-color, $background-color);
+        bottom: -30%;
+        left: 75%;
+        animation: animate 10s 3s infinite;
+
+    }
+
+    .bubble3 {
+        z-index: -2;
+        position: absolute;
+        height: $h;
+        width: $w;
+        border-radius: 50%;
+        background: linear-gradient(45deg, $primary-color, $background-color);
+        bottom: -30%;
+        left: -10%;
+        animation: animate 18s 5s infinite;
+    }
+    
+    .bubble4 {
+        z-index: -2;
+        position: absolute;
+        height: $h;
+        width: $w;
+        border-radius: 50%;
+        background: linear-gradient(45deg, $primary-color, $background-color);
+        bottom: -30%;
+        left: 35%;
+        animation: animate 20s 6s infinite;
+    }
+    
+    .bubble5 {
+        z-index: -2;
+        position: absolute;
+        height: $h;
+        width: $w;
+        border-radius: 50%;
+        background: linear-gradient(45deg, $primary-color, $background-color);
+        bottom: -30%;
+        left: -10%;
+        animation: animate 18s 7s infinite;
+    }
+
+    .bubble6 {
+        z-index: -2;
+        position: absolute;
+        height: $h;
+        width: $w;
+        border-radius: 50%;
+        background: linear-gradient(45deg, $primary-color, $background-color);
+        bottom: -30%;
+        left: 50%;
+        animation: animate 18s 15s infinite;
+    }
+
+    .bubble7 {
+        z-index: -2;
+        position: absolute;
+        height: $h;
+        width: $w;
+        border-radius: 50%;
+        background: linear-gradient(45deg, $primary-color, $background-color);
+        bottom: -30%;
+        left: 65%;
+        animation: animate 18s 5s infinite;
+
+    }
+
+    // .bubble1:hover,
+    // .bubble2:hover,
+    // .bubble3:hover,
+    // .bubble4:hover,
+    // .bubble5:hover,
+    // .bubble6:hover,
+    // .bubble7:hover {
+    //     animation: animate 18s infinite;
+    // }
+}
+
