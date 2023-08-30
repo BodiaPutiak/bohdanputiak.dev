@@ -1,3 +1,4 @@
 [build]
+base = "personal-website/"
 command = "npm run build"
 publish = "personal-website/dist"
