@@ -1,4 +1,4 @@
 [build]
 base = "personal-website/"
-command = "CI= npm run build"
+command = "vite build"
 publish = "personal-website/dist"
