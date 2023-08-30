@@ -2,7 +2,7 @@ import './index.scss';
 import Loader from 'react-loaders';
 import chatApp from '../../assets/demos/chatApp.mp4';
 import AmazonClone from '../../assets/demos/AmazonClone.mp4';
-import cs50finalProject from '../../assets/demos/cs50FinalProject.mp4';
+import cs50finalProject from '../../assets/demos/cs50finalProject.mp4';
 import spotifyMusicController from '../../assets/demos/spotifyMusicController.mp4';
 import Background from '../Home/Background';
 import { useLocation, useParams } from 'react-router-dom';
