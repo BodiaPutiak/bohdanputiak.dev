@@ -1,4 +1,4 @@
-import Loader from 'react-loaders';
+// import Loader from 'react-loaders';
 import './index.scss';
 import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
@@ -63,7 +63,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <Loader type='pacman' />
+        {/* <Loader type='pacman' /> */}
         </>
     )
 }
