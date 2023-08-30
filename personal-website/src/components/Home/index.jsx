@@ -1,5 +1,4 @@
 import './index.scss';
-// import Loader from 'react-loaders';
 import logoBP from '../../assets/images/logo-s.png';
 import Tilt from 'react-parallax-tilt';
 import Background from './Background';
@@ -21,7 +20,6 @@ const Home = () => {
                 </div>
                 <Background />
             </div>
-            {/* <Loader type='pacman' /> */}
         </>
     )
 }

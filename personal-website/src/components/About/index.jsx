@@ -1,6 +1,5 @@
 import './index.scss';
 import { useState } from 'react';
-// import Loader from 'react-loaders';
 import MyPhoto from '../../assets/images/my-photo.jpg'
 import stroke from '../../assets/images/stroke.png'
 import htmlLogo from '../../assets/images/logo1.svg'
@@ -164,7 +163,6 @@ const About = () => {
                 </div>
             </div>
         </div>
-        {/* <Loader type='pacman' /> */}
         </>
     )
 }

@@ -1,5 +1,4 @@
 import './index.scss';
-// import Loader from 'react-loaders';
 import chatApp from '../../assets/demos/chatApp.mp4';
 import AmazonClone from '../../assets/demos/AmazonClone.mp4';
 import cs50finalProject from '../../assets/demos/cs50finalProject.mp4';
@@ -41,7 +40,6 @@ const Portfolio = () => {
             ) : (
                 renderPortfolio()
             )}
-            {/* <Loader type='pacman' /> */}
         </>
     )
 }

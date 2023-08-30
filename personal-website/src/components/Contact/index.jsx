@@ -1,6 +1,4 @@
-// import Loader from 'react-loaders';
 import './index.scss';
-import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react'
 
@@ -63,7 +61,6 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        {/* <Loader type='pacman' /> */}
         </>
     )
 }
