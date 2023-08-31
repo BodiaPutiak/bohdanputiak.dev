@@ -34,31 +34,30 @@ const Contact = () => {
                     If you have questions or other requests you can contact me using the form below 
                     or my contacts at the bottom of the page. I am available at any time. Have a nice day.
                     </p>
+                </div>
 
-                    <div className="contact-form">
-                        <form ref={form} onSubmit={sendEmail}>
-                            <ul>
-                                <div className='halfs-container'>
-                                    <li className='half'>
-                                        <input type='text' name='name' placeholder='Name' required />
-                                    </li>
-                                    <li className='half'>
-                                        <input type='text' name='email' placeholder='Email' required />
-                                    </li>
-                                </div>
-                                <li>
-                                    <input placeholder='Subject' type='text' name='subject' required />
+                <div className="contact-form">
+                    <form ref={form} onSubmit={sendEmail}>
+                        <ul>
+                            <div className='halfs-container'>
+                                <li className='half'>
+                                    <input type='text' name='name' placeholder='Name' required />
                                 </li>
-                                <li>
-                                    <textarea placeholder='Message' name="message" required></textarea>
+                                <li className='half'>
+                                    <input type='text' name='email' placeholder='Email' required />
                                 </li>
-                                <li>
-                                    <input type='submit' className='flat-button' value='SEND' />    
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
-
+                            </div>
+                            <li>
+                                <input placeholder='Subject' type='text' name='subject' required />
+                            </li>
+                            <li>
+                                <textarea placeholder='Message' name="message" required></textarea>
+                            </li>
+                            <li>
+                                <input type='submit' className='flat-button' value='SEND' />    
+                            </li>
+                        </ul>
+                    </form>
                 </div>
             </div>
         </div>
