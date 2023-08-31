@@ -9,6 +9,7 @@ import pythonLogo from '../../assets/images/logo6.svg'
 import reactLogo from '../../assets/images/logo5.png'
 import flaskLogo from '../../assets/images/logo4.svg'
 import djangoLogo from '../../assets/images/django.svg'
+import Loader from 'react-loaders'
 
 
 const About = () => {
@@ -163,6 +164,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <Loader type='pacman' />
         </>
     )
 }

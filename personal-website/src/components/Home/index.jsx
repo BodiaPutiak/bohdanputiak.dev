@@ -2,6 +2,7 @@ import './index.scss';
 import logoBP from '../../assets/images/logo-s.png';
 import Tilt from 'react-parallax-tilt';
 import Background from './Background';
+import Loader from 'react-loaders';
 
 const Home = () => {
     return(
@@ -20,6 +21,7 @@ const Home = () => {
                 </div>
                 <Background />
             </div>
+            <Loader type='pacman' />
         </>
     )
 }
