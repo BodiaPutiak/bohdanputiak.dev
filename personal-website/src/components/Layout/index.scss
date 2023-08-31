@@ -23,20 +23,19 @@
 html {
     font-size: 62.5%;
     overflow: scroll;
+    overflow-x: hidden;
     body {
+        position: relative;
         height: inherit;
         margin: 0;
         font: 300 11/1.4 'Helvetica Neue', 'sans-serif';
         color: #444;
         background: $background-color;
-        overflow-x: hidden;
-        
+        overflow-x: hidden;        
         .layout {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-
-
           }
     }
     
