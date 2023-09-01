@@ -115,7 +115,7 @@ const About = () => {
                 </div>
             </div>
             <div className='skills-container'>
-                <h1>Technologies I've workedd with:</h1>
+                <h1>Technologies I've worked with:</h1>
                 {renderTags()}
                 <div className='list-div'>
                     <div className='skill-container'>

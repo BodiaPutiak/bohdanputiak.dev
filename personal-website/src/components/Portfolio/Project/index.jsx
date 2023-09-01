@@ -36,7 +36,6 @@ const Project = () => {
                         deleting them from the cart, choosing the delivery date, and updating the total based on that kind of activities.
                     </p>
                 </div>
-                <Background />
             </div>
         )
     }
@@ -57,7 +56,6 @@ const Project = () => {
 
                     </p>
                 </div>
-                <Background />
             </div>
         )
     }
@@ -83,7 +81,6 @@ const Project = () => {
                         for some period of time, so they didn't have to fill in their information every time they use CS50 Finance.
                     </p>
                 </div>
-                <Background />
             </div>
         )
     }
@@ -108,7 +105,6 @@ const Project = () => {
                         But the creator of the room is allowed to do anything he wants with currently playing song, as well as changing settings of his room.
                     </p>
                 </div>
-                <Background />
             </div>
         )
     }
