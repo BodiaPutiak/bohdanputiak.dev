@@ -104,7 +104,7 @@ const About = () => {
                     <h1>About me</h1>
                     <p>
                         Hi there! I am Bohdan Putiak, a beginner self-thought 
-                        Full-Stack Software developer currently based in Warsaw, Poland.
+                        Front-End Software developer currently based in Warsaw, Poland.
                     </p>
                     <p>
                         I have a passion for learning new things, solving problems, 
