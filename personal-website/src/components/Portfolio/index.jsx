@@ -4,6 +4,7 @@ import Loader from 'react-loaders';
 import AmazonClone from '../../assets/demos/AmazonClone.mp4';
 import cs50finalProject from '../../assets/demos/cs50finalProject.mp4';
 import spotifyMusicController from '../../assets/demos/spotifyMusicController.mp4';
+import GymBro from '../../assets/demos/GymBro.mp4'
 import Background from '../Home/Background';
 import { useLocation, useParams } from 'react-router-dom';
 import Project from './Project';
@@ -16,6 +17,7 @@ const Portfolio = () => {
         chatApp: {name: 'ChatApp', index: 1, title: 'Simple Chat App', video: chatApp, stack: ['HTML','CSS', 'JavaScript', 'Fask']},
         amazonClone: {name: 'AmazonClone', index: 2, title: 'Amazone Clone', video: AmazonClone, stack: ['HTML', 'CSS', 'JavaScript']},
         spotifyMusicController: {name: 'SpotifyMusicController', index: 3, title: 'Spotify Music Controller', video: spotifyMusicController, stack: ['HTML','Material UI', 'ReactJS', 'Django', 'Python']},
+        GymBro: {name: 'GymBro', index: 4, title: 'GymBro', video: GymBro, stack: ['HTML', 'SCSS', 'ReactJS']}
     };
     const location = useLocation();
     const { projectName } = useParams();

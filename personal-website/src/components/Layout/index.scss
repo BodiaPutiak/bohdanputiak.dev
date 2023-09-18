@@ -24,6 +24,7 @@ html {
     font-size: 62.5%;
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     body {
         position: relative;
         height: inherit;

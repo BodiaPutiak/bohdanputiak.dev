@@ -7,9 +7,18 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Project from './components/Portfolio/Project';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 
 function App() {
+
+  const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+    }, [pathname]);
   
   return (
     <Routes>

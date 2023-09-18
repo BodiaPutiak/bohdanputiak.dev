@@ -10,6 +10,7 @@ const Preview = (props) => {
         useRef(null), 
         useRef(null),
         useRef(null), 
+        useRef(null),
         useRef(null)
     ];
 

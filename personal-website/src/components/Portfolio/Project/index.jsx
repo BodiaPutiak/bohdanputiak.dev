@@ -4,9 +4,7 @@ import chatApp from '../../../assets/demos/chatApp.mp4';
 import AmazonClone from '../../../assets/demos/AmazonClone.mp4';
 import cs50finalProject from '../../../assets/demos/cs50finalProject.mp4';
 import spotifyMusicController from '../../../assets/demos/spotifyMusicController.mp4';
-import Background from '../../Home/Background';
-
-
+import GymBro from '../../../assets/demos/GymBro.mp4';
 const Project = () => {
     const { projectName } = useParams();
 
@@ -109,6 +107,39 @@ const Project = () => {
         )
     }
 
+    const renderGymBro = () => {
+        return(
+            <div className='project-container'>
+                <div className='video-container'>
+                    <video src={GymBro} autoPlay='true' infinite='true'></video>
+                </div>
+                <div className="text-container">
+                    <h1>
+                        GymBro 
+
+                    </h1>
+                    <div className="link-container">
+                        <a  target='_blank' href='https://gymbro.pages.dev/'>LIVE DEMO</a>
+                        <a  target='_blank' href="https://github.com/BodiaPutiak/GymBro">GitHub repository</a>
+                    </div>
+                    <p>
+                        
+                        I am excited to showcase a project I've been working on using React, HTML, and SCSS. While this project is not yet fully finished, I've decided to share it on my portfolio website to provide a glimpse into my development journey.
+
+                        This project represents a significant step in my growth as a web developer, and I wanted to share my progress with you. It demonstrates my proficiency in React, a powerful JavaScript library for building user interfaces. The use of HTML and SCSS allows me to create structured and stylish web applications that are both functional and visually appealing.
+
+                        Even though the project is a work in progress, I believe that sharing it is essential to document my learning process and to demonstrate my dedication to continuous improvement. I plan to add new features and enhancements step by step, refining the project and expanding its capabilities.
+
+                        I invite you to explore this project and witness its evolution. Stay tuned for updates as I continue to enhance its functionality and design. Your feedback and support are greatly appreciated as I embark on this exciting development journey.
+
+                        Thank you for visiting my portfolio, and I look forward to sharing more exciting projects with you in the future!
+                        
+                    </p>
+                </div>
+            </div>
+        )
+    }
+
     
     if (projectName === 'ChatApp') {
         return renderMyChat();
@@ -118,6 +149,8 @@ const Project = () => {
         return (renderCsFinalProject());
     } else if (projectName === 'SpotifyMusicController') {
         return (renderSpotifyPlayer());
+    } else if (projectName === 'GymBro') {
+        return (renderGymBro());
     }
 
 };
