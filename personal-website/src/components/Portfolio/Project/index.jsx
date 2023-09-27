@@ -124,7 +124,7 @@ const Project = () => {
         return(
             <div className='project-container'>
                 <div className='img-container'>
-                    <img src={EcommerceStore} />
+                    <img className='ecomm' src={EcommerceStore} />
                 </div>
                 <div className="text-container">
                     <h1>

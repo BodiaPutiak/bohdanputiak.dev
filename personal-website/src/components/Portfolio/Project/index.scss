@@ -2,19 +2,20 @@
 
 .project-container {
     margin: 50px 20px 115px 70px;
+    display: flex;
+    flex-direction: column;
     .img-container {
         position: relative;
         overflow: hidden;
-        min-height: 400px;
-        width: 700px;
-        float: left;
-        margin-right: 50px;
+        height: 600px;
+        max-width: 90%;
+        margin-right: 10px;
         border-radius: 35px;
 
         img {
             position: absolute;
             top: 0;
-            left: 0;
+            bottom: 0;
             width: 100%;
             transition: all 5s ease-in-out;
         }
@@ -85,7 +86,7 @@
 
 @media (max-width: 911px) {
     .project-container {
-        .video-container {
+        .img-container {
             height: 250px;
         }
     }
@@ -93,7 +94,7 @@
 
 @media (max-width: 499px) {
     .project-container {
-        .video-container {
+        .img-container {
             height: 175px;
         }
         .text-container {
@@ -109,7 +110,7 @@
 
 @media (max-width: 449px) {
     .project-container {
-        .video-container {
+        .img-container {
             height: 135px;
         }
         .text-container {
