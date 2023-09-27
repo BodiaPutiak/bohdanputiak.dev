@@ -1,10 +1,10 @@
 import './index.scss';
 import { useParams } from 'react-router-dom';
-import chatApp from '../../../assets/demos/chatApp.mp4';
-import AmazonClone from '../../../assets/demos/AmazonClone.mp4';
-import cs50finalProject from '../../../assets/demos/cs50finalProject.mp4';
-import spotifyMusicController from '../../../assets/demos/spotifyMusicController.mp4';
-import GymBro from '../../../assets/demos/GymBro.mp4';
+import AmazonClone from '../../../assets/demos/amazon-clone.png';
+import cs50finalProject from '../../../assets/demos/cs50finalProject.png';
+import spotifyMc from '../../../assets/demos/spotifyMC.png'
+import GymBro from '../../../assets/demos/gym-bro.png';
+import EcommerceStore from '../../../assets/demos/ecomerce-store.png'
 const Project = () => {
     const { projectName } = useParams();
 
@@ -12,8 +12,8 @@ const Project = () => {
     const renderAmazonClone = () => {
         return(
             <div className='project-container'>
-                <div className='video-container'>
-                    <video src={AmazonClone} autoPlay={true} infinite='true'></video>
+                <div className='img-container'>
+                    <img className='amaz' src={AmazonClone} />
                 </div>
                 <div className="text-container">
                     <h1>Amazon Clone</h1>
@@ -38,31 +38,12 @@ const Project = () => {
         )
     }
 
-    const renderMyChat = () => {
-        return(
-            <div className='project-container'>
-                <div className='video-container'>
-                    <video src={chatApp} autoPlay={true} infinite='true'></video>
-                </div>
-                <div className="text-container">
-                    <h1>Chat Application</h1>
-                    <p>
-                        This chat application is the second "full-stack" project that I've built so far. 
-                        But this time I had to use a lot more JavaScript to make it work properly and at this part, I struggled the most. 
-                        It also uses the Python back-end framework Flask with SQLite database for registration and saving chat history. 
-                        Additionally, I used Flask socketio to enable users to send and receive messages in real-time. 
-
-                    </p>
-                </div>
-            </div>
-        )
-    }
 
     const renderCsFinalProject = () => {
         return(
             <div className='project-container'>
-                <div className='video-container'>
-                    <video src={cs50finalProject} autoPlay='true' infinite='true'></video>
+                <div className='img-container'>
+                    <img src={cs50finalProject} />
                 </div>
                 <div className="text-container">
                     <h1>CS50 Finance</h1>
@@ -85,8 +66,8 @@ const Project = () => {
     const renderSpotifyPlayer = () => {
         return(
             <div className='project-container'>
-                <div className='video-container'>
-                    <video src={spotifyMusicController} autoPlay='true' infinite='true'></video>
+                <div className='img-container'>
+                  <img src={spotifyMc} />
                 </div>
                 <div className="text-container">
                     <h1>Sptify Music Controller</h1>
@@ -110,29 +91,27 @@ const Project = () => {
     const renderGymBro = () => {
         return(
             <div className='project-container'>
-                <div className='video-container'>
-                    <video src={GymBro} autoPlay='true' infinite='true'></video>
+                <div className='img-container'>
+                    <img className='gym' src={GymBro} />
                 </div>
                 <div className="text-container">
                     <h1>
                         GymBro 
-
                     </h1>
                     <div className="link-container">
                         <a  target='_blank' href='https://gymbro.pages.dev/'>LIVE DEMO</a>
                         <a  target='_blank' href="https://github.com/BodiaPutiak/GymBro">GitHub repository</a>
                     </div>
                     <p>
-                        
-                        I am excited to showcase a project I've been working on using React, HTML, and SCSS. While this project is not yet fully finished, I've decided to share it on my portfolio website to provide a glimpse into my development journey.
+                        I am thrilled to present a project I've been diligently crafting using React, HTML, and SCSS. This endeavor showcases my expertise in web development and provides a glimpse into my journey of growth in this field.
 
-                        This project represents a significant step in my growth as a web developer, and I wanted to share my progress with you. It demonstrates my proficiency in React, a powerful JavaScript library for building user interfaces. The use of HTML and SCSS allows me to create structured and stylish web applications that are both functional and visually appealing.
+                        This project demonstrates my proficiency in React, a powerful JavaScript library for building dynamic user interfaces. Leveraging HTML and SCSS, I've structured and styled this web application to be both functional and visually captivating.
 
-                        Even though the project is a work in progress, I believe that sharing it is essential to document my learning process and to demonstrate my dedication to continuous improvement. I plan to add new features and enhancements step by step, refining the project and expanding its capabilities.
+                        While the project continues to evolve, sharing it here is a vital part of documenting my learning process and showcasing my commitment to continuous improvement. I am dedicated to enhancing this project incrementally, introducing new features and refining its capabilities.
 
-                        I invite you to explore this project and witness its evolution. Stay tuned for updates as I continue to enhance its functionality and design. Your feedback and support are greatly appreciated as I embark on this exciting development journey.
+                        I invite you to explore this project and witness its ongoing development. Stay tuned for updates as I enhance its functionality and design. Your feedback and support are immensely valuable as I embark on this exciting development journey.
 
-                        Thank you for visiting my portfolio, and I look forward to sharing more exciting projects with you in the future!
+                        Thank you for visiting my portfolio, and I anticipate sharing more captivating projects with you in the future!
                         
                     </p>
                 </div>
@@ -140,10 +119,36 @@ const Project = () => {
         )
     }
 
+
+    const renderEcommerce = () => {
+        return(
+            <div className='project-container'>
+                <div className='img-container'>
+                    <img src={EcommerceStore} />
+                </div>
+                <div className="text-container">
+                    <h1>
+                        Ecommerce Store 'bodiashop.com'
+                    </h1>
+                    <div className="link-container">
+                        <a  target='_blank' href='https://ecomerce-store.pages.dev/'>LIVE DEMO</a>
+                        <a  target='_blank' href="https://github.com/BodiaPutiak/Ecomerce-store">GitHub repository</a>
+                    </div>
+                    <p>
+                    Introducing my latest project, a minimalist e-commerce store crafted with React, HTML, and SCSS. This sleek and user-friendly online shopping platform showcases my expertise in web development and design. With a clean and intuitive interface, it provides a seamless shopping experience for users.
+
+                    Explore this project to see how I've harnessed the power of React to create dynamic and responsive components, while HTML and SCSS have been meticulously employed to ensure a structured and visually appealing website.
+
+                    Stay tuned for more details about this exciting addition to my portfolio, and thank you for visiting!
+                        
+                    </p>
+                </div>
+            </div>
+        )
+    }
     
-    if (projectName === 'ChatApp') {
-        return renderMyChat();
-    } else if (projectName === 'AmazonClone') {
+    
+    if (projectName === 'AmazonClone') {
         return (renderAmazonClone());
     } else if (projectName === 'cs50FinalProject') {
         return (renderCsFinalProject());
@@ -151,6 +156,8 @@ const Project = () => {
         return (renderSpotifyPlayer());
     } else if (projectName === 'GymBro') {
         return (renderGymBro());
+    } else if (projectName === 'EcommerceStore') {
+        return (renderEcommerce())
     }
 
 };

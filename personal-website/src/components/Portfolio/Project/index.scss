@@ -2,14 +2,39 @@
 
 .project-container {
     margin: 50px 20px 115px 70px;
-    .video-container {
-        height: 375px;
+    .img-container {
+        position: relative;
+        overflow: hidden;
+        min-height: 400px;
+        width: 700px;
         float: left;
         margin-right: 50px;
-        video, 
+        border-radius: 35px;
+
         img {
-            height: 100%;
-            border-radius: 35px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: all 5s ease-in-out;
+        }
+
+        .ecomm {
+            &:hover {
+                transform: translateY(-83%);
+            }
+        }
+
+        .gym {
+            &:hover {
+                transform: translateY(-90%);
+            }
+        }
+
+        .amaz {
+            &:hover {
+                transform: translateY(-54%);
+            }
         }
     }
 

@@ -1,32 +1,9 @@
 import Tilt from 'react-parallax-tilt';
-import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
 
 const Preview = (props) => {
-    const videoRefs = [
-        useRef(null), 
-        useRef(null), 
-        useRef(null),
-        useRef(null), 
-        useRef(null),
-        useRef(null)
-    ];
-
-    const handleVideoHover = (index) => {
-        const video = videoRefs[index].current;
-
-        if (video) {
-            if (video.paused) {
-                video.play();
-            } else {
-                video.pause();
-                video.currentTime = 0;
-            }
-        }
-    };
-
     const renderTechStack = (technologies) => {
         return (
             <>
@@ -46,16 +23,8 @@ const Preview = (props) => {
     return (
         <Tilt>
             <div className="project-card">
-                <div className="project-video-container">
-                <video
-                    src={props.data.video}
-                    typeof='video/mp4'
-                    loop
-                    muted
-                    ref={videoRefs[props.data.index]}
-                    onMouseEnter={() => handleVideoHover(props.data.index)}
-                    onMouseLeave={() => handleVideoHover(props.data.index)}
-                />
+                <div className="project-img-container">
+                    <img className={props.data.imgClass} src={props.data.img} alt="" />
                 </div>
                 <div className='text-container'>
                     <h1>{props.data.title}</h1>
