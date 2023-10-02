@@ -1,4 +1,0 @@
-[build]
-base = "personal-website/"
-command = "CI=false npm run build"
-publish = "personal-website/dist"

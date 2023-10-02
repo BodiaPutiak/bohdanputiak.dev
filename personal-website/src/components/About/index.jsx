@@ -149,8 +149,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className='skill-container'>
-                        <p>Django and 
-                            DjangoREST framework</p>
+                        <p>DjangoREST framework</p>
                         <div className="skill-img">
                             <img src={djangoLogo} alt="" />
                         </div>
