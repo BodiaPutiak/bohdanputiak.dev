@@ -8,7 +8,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 70px 0 0 70px;
+    margin: 70px 10px 0 70px;
     padding-bottom: 250px;
     opacity: 0;
     animation: fadeIn 1s forwards;
@@ -32,7 +32,6 @@
     .tilt-container {
         flex: 0.7;        
         .logo-container {
-            margin-right: 10px;
             padding: 50px 0 50px 0;
             display: flex;
             justify-content: center;
@@ -53,26 +52,24 @@
 }
 
 @media (max-width: 999px) {
-    html, body {
-        .home-page {
-            flex-direction: column;
-            justify-content: center;
-            row-gap: 100px;
-            .text-container {
-                h1 {
-                    font-size: 10vw;
-                }
-                p {
-                    font-size: 5vw;
-                }
-            }        
-            .text-container {
-                width: 100%;
+    .home-page {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 100px;
+        .text-container {
+            h1 {
+                font-size: 10vw;
             }
-            .logo-container {
-                width: 100%;
+            p {
+                font-size: 5vw;
             }
+        }        
+        .text-container {
+            width: 100%;
+        }
+        .logo-container {
+            width: 100%;
         }
     }
 }
-    
+

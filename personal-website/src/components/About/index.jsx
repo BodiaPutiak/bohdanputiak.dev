@@ -125,7 +125,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className='skill-container'>
-                        <p>CSS</p>
+                        <p>CSS (SCSS)</p>
                         <div className="skill-img">
                             <img src={cssLogo} alt="" />
                         </div>
@@ -152,12 +152,6 @@ const About = () => {
                         <p>DjangoREST framework</p>
                         <div className="skill-img">
                             <img src={djangoLogo} alt="" />
-                        </div>
-                    </div>
-                    <div className='skill-container'>
-                        <p>Flask</p>
-                        <div className="skill-img">
-                            <img src={flaskLogo} alt="" />
                         </div>
                     </div>
                 </div>
