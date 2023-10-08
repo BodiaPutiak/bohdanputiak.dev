@@ -1,7 +1,6 @@
 import './index.scss';
 import { useParams } from 'react-router-dom';
 import AmazonClone from '../../../assets/demos/amazon-clone.png';
-import cs50finalProject from '../../../assets/demos/cs50finalProject.png';
 import spotifyMc from '../../../assets/demos/spotifyMC.png'
 import GymBro from '../../../assets/demos/gym-bro.png';
 import EcommerceStore from '../../../assets/demos/ecomerce-store.png'
@@ -38,31 +37,6 @@ const Project = () => {
         )
     }
 
-
-    const renderCsFinalProject = () => {
-        return(
-            <div className='project-container'>
-                <div className='img-container'>
-                    <img src={cs50finalProject} />
-                </div>
-                <div className="text-container">
-                    <h1>CS50 Finance</h1>
-                    <p>
-                        This is the final project of the Harvard CS50 course that I took. It is not too complicated but when I was doing it was a bit challenging. 
-                        The template and styling for this project were already made so students could concentrate on the logic. Also, the implementation of API was made ahead of time by the course staff.
-
-                        CS50 Finance is a trading platform where users can look up the price of the stock, and buy or sell them. 
-                        To start with this application user need to log in or register his account. 
-                        The registration process is implemented by using Flask is stored in default SQLite database. 
-                        After registration or logging in, you are redirected to the main page where are displayed all the stocks 
-                        that the user has and a history page where are all the stocks that the user bought or sold. 
-                        Also, in this project, I've used Flask session to save users' information 
-                        for some period of time, so they didn't have to fill in their information every time they use CS50 Finance.
-                    </p>
-                </div>
-            </div>
-        )
-    }
     const renderSpotifyPlayer = () => {
         return(
             <div className='project-container'>

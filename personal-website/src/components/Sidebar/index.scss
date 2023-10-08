@@ -7,7 +7,6 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    min-height: 500px;
   
     .logo {
       display: block;
@@ -125,4 +124,33 @@
         }
       }
     }
+}
+
+@media (max-width: 321px) {
+  .burger-menu {
+    margin: 15px 0 0 15px;
+    height: 30px;
+    svg {
+      height: 100%
+    }
+  }
+
+  
+  .nav-bar {
+    display: none;
+    .cross {
+      height: 20px;
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      cursor: pointer;
+      svg {
+        height: 100%;
+      }
+    }
+  }
+  .show {
+    display: block;
+    width: 50%;
+  }
 }
