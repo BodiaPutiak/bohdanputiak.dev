@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import AmazonClone from '../../../assets/demos/amazon-clone.png';
 import spotifyMc from '../../../assets/demos/spotifyMC.png'
 import GymBro from '../../../assets/demos/gym-bro.png';
-import EcommerceStore from '../../../assets/demos/ecomerce-store.png'
+import EcommerceStore from '../../../assets/demos/ecomerce-store.png';
+import BookMark from '../../../assets/demos/book-mark.png';
 const Project = () => {
     const { projectName } = useParams();
 
@@ -120,6 +121,29 @@ const Project = () => {
             </div>
         )
     }
+
+    const renderBookMark = () => {
+        return(
+            <div className='project-container'>
+                <div className='img-container'>
+                    <img className='ecomm' src={BookMark} />
+                </div>
+                <div className="text-container">
+                    <h1>
+                        Langing Page for Chrome Extension 'BookMark'
+                    </h1>
+                    <div className="link-container">
+                        <a  target='_blank' href='https://bookmarkwebsite.pages.dev/'>LIVE DEMO</a>
+                        <a  target='_blank' href="https://github.com/BodiaPutiak/BookmarkWebSite">GitHub repository</a>
+                    </div>
+                    <p>
+                        Simple langing page for chrome extension called 'BookMark'. There is nothing exciting about this project but I like the design and the layout of the page. So I decided to add it to my small portfolio.
+                        Stay tuned for more details about this exciting addition to my portfolio, and thank you for visiting!
+                    </p>
+                </div>
+            </div>
+        )
+    }
     
     
     if (projectName === 'AmazonClone') {
@@ -132,8 +156,9 @@ const Project = () => {
         return (renderGymBro());
     } else if (projectName === 'EcommerceStore') {
         return (renderEcommerce())
+    } else if (projectName === 'BookMark') {
+        return (renderBookMark())
     }
-
 };
 
 export default Project;
