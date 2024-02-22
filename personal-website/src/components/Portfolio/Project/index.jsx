@@ -5,6 +5,7 @@ import spotifyMc from '../../../assets/demos/spotifyMC.png'
 import GymBro from '../../../assets/demos/gym-bro.png';
 import EcommerceStore from '../../../assets/demos/ecomerce-store.png';
 import BookMark from '../../../assets/demos/book-mark.png';
+import CarRental from '../../../assets/demos/car-rental-img.png'
 const Project = () => {
     const { projectName } = useParams();
 
@@ -144,12 +145,33 @@ const Project = () => {
             </div>
         )
     }
+
+    const renderCarRental = () => {
+        return(
+            <div className='project-container'>
+                <div className='img-container'>
+                    <img className='ecomm' src={CarRental} />
+                </div>
+                <div className="text-container">
+                    <h1>
+                        Langing Page for Chrome Extension 'BookMark'
+                    </h1>
+                    <div className="link-container">
+                        <a  target='_blank' href='https://car-rentall.pages.dev/'>LIVE DEMO</a>
+                        <a  target='_blank' href="https://github.com/BodiaPutiak/CarRental">GitHub repository</a>
+                    </div>
+                    <p>
+                        Simple langing page for chrome extension called 'BookMark'. There is nothing exciting about this project but I like the design and the layout of the page. So I decided to add it to my small portfolio.
+                        Stay tuned for more details about this exciting addition to my portfolio, and thank you for visiting!
+                    </p>
+                </div>
+            </div>
+        )
+    }
     
     
     if (projectName === 'AmazonClone') {
         return (renderAmazonClone());
-    } else if (projectName === 'cs50FinalProject') {
-        return (renderCsFinalProject());
     } else if (projectName === 'SpotifyMusicController') {
         return (renderSpotifyPlayer());
     } else if (projectName === 'GymBro') {
@@ -158,6 +180,8 @@ const Project = () => {
         return (renderEcommerce())
     } else if (projectName === 'BookMark') {
         return (renderBookMark())
+    } else if (projectName === 'CarRental'){
+        return (renderCarRental())
     }
 };
 
