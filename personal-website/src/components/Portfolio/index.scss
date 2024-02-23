@@ -50,6 +50,17 @@
                     transform: translateY(-89%);
                 }
             }
+
+            .rental {
+                &:hover {
+                    transform: translateY(-88%);
+                }
+            }
+            .book {
+                &:hover {
+                    transform: translateY(-79%);
+                }
+            }
             &:hover {
                 transform: scale(1.1);
             }
