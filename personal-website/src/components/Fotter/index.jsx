@@ -6,12 +6,12 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="row">
                     <div className="footer-col">
-                        <h1>Copyright &copy; 2023. All rights are reserved</h1>
+                        <h1>Copyright &copy; 2024. All rights are reserved</h1>
                     </div>
                     <div className="footer-col">
                         <h4>Contact me</h4>
                         <ul>
-                            <li>Email: bohdanputiak75@gmail.com</li>
+                            <li>Email: bogdanputiak@gmail.com</li>
                             <li>Phone number: +48451008269</li>
                         </ul>
                     </div>

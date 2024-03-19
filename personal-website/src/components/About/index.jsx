@@ -7,7 +7,6 @@ import cssLogo from '../../assets/images/logo2.png'
 import javaLogo from '../../assets/images/logo3.svg'
 import pythonLogo from '../../assets/images/logo6.svg'
 import reactLogo from '../../assets/images/logo5.png'
-import flaskLogo from '../../assets/images/logo4.svg'
 import djangoLogo from '../../assets/images/django.svg'
 import Loader from 'react-loaders'
 
@@ -33,17 +32,20 @@ const About = () => {
         return (
             <div className='see-more-container'>
                 <p>
-                    I began my coding journey at Lviv Polytechnic University. I was studying Applicable Linguistics and we had some coding classes, however, they weren't as good as I thought they would be. In those classes, we were coding mostly in Pascal programming language which isn't the best option in today's world. 
+                    A graduate in Applied Linguistics seeking opportunities for development as a junior specialist in the 
+                    field of programming. I have solid two years of programming experience (2 years of non-commercial 
+                    experience), with a particular emphasis on advanced skills in JavaScript.
+ 
                 </p>
                 <p>
-                    So I've decided to move in this direction on my own. I've started watching YouTube tutorials on how to learn to code and quickly picked up Python because a lot of people online recommended it as the first programming language as it is easy to learn and is known for its English-like syntax. So I went online and found 'A Python course for beginners on 'Stepik'
-                    (course platform similar to Udemy). So at free from university time, I was taking this course. 
+                    I am fluent in English, Russian, and Ukrainian, enabling me to communicate effectively in 
+                    international teams. I have experience working in groups, confirming my high communication skills 
+                    and ability to collaborate effectively.
                 </p>
                 <p>
-                    And then I had to leave Ukraine. I moved to the small town of Białogard in Poland in the summer of 2022 and had to find a job. I was working 10 hours, five days a week, and studying on weekends. After I finished this Python course I found the Harvard CS50 course that covered the basics of computer science and was using C language as well as Python and JavaScript but half of the course was in C unfortunately&#40;.
-                </p>
-                <p>
-                    Then I decided to move to Warsaw and find a job that allowed me to focus more on programming. I finished the CS50 course at the end of spring 2023 and started making my own projects using frameworks like Flask, ReactJS, and Django which you can see on this website. 
+                    I am enthusiastic about professional development in the programming field and ready to contribute 
+                    my skills to a new team. I am confident that my experience, determination, and skills align with the 
+                    expectations for the position of a junior front-end specialist                
                 </p>
                 <button onClick={() => {updateShowLongVersion(false)}}>See less</button>
             </div>
