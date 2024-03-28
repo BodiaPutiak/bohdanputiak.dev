@@ -48,16 +48,19 @@
             font-weight: 300;
             margin-top: 10px;
         }
-
-        button {
-            margin: 20px 0;
-            color: $primary-color;
-            background: 0 0;
-            font-size: 19px;
-            border: 1px solid $primary-color;
-            border-radius: 4px;
-            cursor: pointer;
-            padding: 10px;
+        .buttons-container {
+            display: flex;
+            gap: 20px;
+            button {
+                margin: 20px 0;
+                color: $primary-color;
+                background: 0 0;
+                font-size: 19px;
+                border: 1px solid $primary-color;
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 10px;
+            }
         }
         .see-more-container {
             animation: fadeIn 1s forwards;
@@ -72,6 +75,7 @@
     align-items: center; 
     margin-left: 70px;
     margin-right: 10px;
+    margin-bottom: 100px;
     
 
     h1 {

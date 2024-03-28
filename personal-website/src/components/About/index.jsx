@@ -11,30 +11,33 @@ import djangoLogo from '../../assets/images/django.svg'
 import Loader from 'react-loaders'
 
 
+
 const About = () => {
-    let [state, setState] = useState({
-        showLongVersion: false
-    });
-    
+    let [showLongVersion, setShowLongVersion] = useState(false);
+    const downoloadCv = () => {
+        const pdfUrl = "BohdanPutiakCV.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Bohdan_Putiak_CV.pdf"; 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     const renderSeeMoreButton = () => {
         return(
-            <button onClick={() => updateShowLongVersion(true)}>See more</button>
+            <div className='buttons-container'>
+                <button onClick={() => setShowLongVersion(!showLongVersion)}>{!showLongVersion? 'See more' : 'See Less'}</button>
+                <button onClick={downoloadCv}>Download CV</button>
+            </div>
         )
     }
-    
-    const updateShowLongVersion = (value) => {
-        setState({
-            ...state,
-            showLongVersion: value
-        })
-    }
+
     const renderLongVersion = () => {
         return (
             <div className='see-more-container'>
                 <p>
                     A graduate in Applied Linguistics seeking opportunities for development as a junior specialist in the 
-                    field of programming. I have solid two years of programming experience (2 years of non-commercial 
-                    experience), with a particular emphasis on advanced skills in JavaScript.
+                    field of programming. I have solid two years of programming experience (non-commercial ), with a particular emphasis on advanced skills in JavaScript and ReactJS.
  
                 </p>
                 <p>
@@ -47,7 +50,7 @@ const About = () => {
                     my skills to a new team. I am confident that my experience, determination, and skills align with the 
                     expectations for the position of a junior front-end specialist                
                 </p>
-                <button onClick={() => {updateShowLongVersion(false)}}>See less</button>
+                {renderSeeMoreButton()}
             </div>
         )
     }
@@ -111,9 +114,9 @@ const About = () => {
                     <p>
                         I have a passion for learning new things, solving problems, 
                         and bringing value to others trough code using 
-                        Python, JavaScript, ReactJS and CSS.
+                        JavaScript, ReactJS, HTML and CSS.
                     </p>
-                    {state.showLongVersion ? renderLongVersion() : renderSeeMoreButton()}
+                    {showLongVersion ? renderLongVersion() : renderSeeMoreButton()}
                 </div>
             </div>
             <div className='skills-container'>
@@ -140,6 +143,12 @@ const About = () => {
                     </div>
                     <div className='skill-container'>
                         <p>ReactJS</p>
+                        <div className="skill-img">
+                            <img src={reactLogo} alt="" />
+                        </div>
+                    </div>
+                    <div className='skill-container'>
+                        <p>Redux Toolkit</p>
                         <div className="skill-img">
                             <img src={reactLogo} alt="" />
                         </div>
