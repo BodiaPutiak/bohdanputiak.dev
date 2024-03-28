@@ -28,10 +28,11 @@ const Portfolio = () => {
     const renderPortfolio = () => {
         return(
             <div className='container portfolio-page'>
-
-                {Object.values(data).map((project) => (
-                    <Preview key={project.name} data={project} />
-                ))}
+                <div className="grid-container">
+                    {Object.values(data).map((project) => (
+                        <Preview key={project.name} data={project} />
+                    ))}
+                </div>
                 <Background />
             </div>
         )

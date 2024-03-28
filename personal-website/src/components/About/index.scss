@@ -60,6 +60,7 @@
                 border-radius: 4px;
                 cursor: pointer;
                 padding: 10px;
+
             }
         }
         .see-more-container {
@@ -154,7 +155,7 @@
        
           &:hover {
             color: $primary-color;
-            transform: scale(1.1);
+            transform: scale(1.03);
             border-radius: 10px;
           }
     }
@@ -201,6 +202,16 @@
             width: 220px;
             bottom: -60px;
             right: -50px;
+        }
+        .text-container {
+            h1 {
+                margin-bottom: 10px;
+            }
+            .buttons-container {
+                button {
+                    font-size: 12px;
+                }
+            }
         }
     }
 

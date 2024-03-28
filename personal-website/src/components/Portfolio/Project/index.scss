@@ -1,14 +1,14 @@
 @import '../../../colors.scss';
 
 .project-container {
-    margin: 50px 20px 115px 70px;
+    margin: 50px 20px 115px 200px;
     display: flex;
     flex-direction: column;
     .img-container {
         position: relative;
         overflow: hidden;
-        height: 600px;
-        max-width: 90%;
+        height: 400px;
+        max-width: 60%;
         margin-right: 10px;
         border-radius: 5px;
 

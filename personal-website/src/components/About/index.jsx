@@ -8,6 +8,7 @@ import javaLogo from '../../assets/images/logo3.svg'
 import pythonLogo from '../../assets/images/logo6.svg'
 import reactLogo from '../../assets/images/logo5.png'
 import djangoLogo from '../../assets/images/django.svg'
+import reduxLogo from '../../assets/images/logo7.svg'
 import Loader from 'react-loaders'
 
 
@@ -150,7 +151,7 @@ const About = () => {
                     <div className='skill-container'>
                         <p>Redux Toolkit</p>
                         <div className="skill-img">
-                            <img src={reactLogo} alt="" />
+                            <img src={reduxLogo} alt="" />
                         </div>
                     </div>
                     <div className='skill-container'>
