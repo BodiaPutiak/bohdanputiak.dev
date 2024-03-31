@@ -20,16 +20,13 @@ const Project = () => {
                     <h1>Amazon Clone</h1>
                     <p>
                         In this project, I've used only HTML, CSS, and vanilla JavaScript. 
-                        So you can guess how many HTML templates are just copy pasted. 
-                        After completing this project I understood why people use frame-works. 
                         <a target='_blank' href='https://github.com/BodiaPutiak/Amazon-clone'> Here you can check out the source code</a> 
-                        (Warning! It'll be not the best one you've ever seen).
 
                         Most buttons on the navigation bar are not active. 
                         I just wanted to replicate the original nav bar as close as 
                         it was possible for me at that time. The only thing that 
                         you can click on is the cart, as well as, all the functionality inside the cart. 
-                        Also, a user can choose the rubric of the product he wants to buy and then choose between 
+                        Also, a user can choose the category of the product he wants to buy and then choose between 
                         available products. Then he can choose a quantity and add that product to the cart. 
                         Inside the cart, I've implemented the functionality of updating the number of products, 
                         deleting them from the cart, choosing the delivery date, and updating the total based on that kind of activities.
@@ -47,6 +44,7 @@ const Project = () => {
                 </div>
                 <div className="text-container">
                     <h1>Sptify Music Controller</h1>
+                    <a  target='_blank' href="https://github.com/BodiaPutiak/Spotify-music-controller">GitHub repository</a>
                     <p>
                         This is the hardest project that I've done so far. 
                         It is a true full-stack web application. 
@@ -83,9 +81,7 @@ const Project = () => {
 
                         This project demonstrates my proficiency in React, a powerful JavaScript library for building dynamic user interfaces. Leveraging HTML and SCSS, I've structured and styled this web application to be both functional and visually captivating.
 
-                        While the project continues to evolve, sharing it here is a vital part of documenting my learning process and showcasing my commitment to continuous improvement. I am dedicated to enhancing this project incrementally, introducing new features and refining its capabilities.
-
-                        I invite you to explore this project and witness its ongoing development. Stay tuned for updates as I enhance its functionality and design. Your feedback and support are immensely valuable as I embark on this exciting development journey.
+                        Stay tuned for updates as I enhance its functionality and design. Your feedback and support are immensely valuable as I embark on this exciting development journey.
 
                         Thank you for visiting my portfolio, and I anticipate sharing more captivating projects with you in the future!
                         
@@ -111,12 +107,11 @@ const Project = () => {
                         <a  target='_blank' href="https://github.com/BodiaPutiak/Ecomerce-store">GitHub repository</a>
                     </div>
                     <p>
-                    Introducing my latest project, a minimalist e-commerce store crafted with React, HTML, and SCSS. This sleek and user-friendly online shopping platform showcases my expertise in web development and design. With a clean and intuitive interface, it provides a seamless shopping experience for users.
+                        Introducing my latest project, a minimalist e-commerce store crafted with React, HTML, and SCSS. This sleek and user-friendly online shopping platform showcases my expertise in web development and design. With a clean and intuitive interface, it provides a seamless shopping experience for users.
 
-                    Explore this project to see how I've harnessed the power of React to create dynamic and responsive components, while HTML and SCSS have been meticulously employed to ensure a structured and visually appealing website.
+                        Explore this project to see how I've harnessed the power of React to create dynamic and responsive components, while HTML and SCSS have been meticulously employed to ensure a structured and visually appealing website.
 
-                    Stay tuned for more details about this exciting addition to my portfolio, and thank you for visiting!
-                        
+                        Stay tuned for more details about this exciting addition to my portfolio, and thank you for visiting!    
                     </p>
                 </div>
             </div>
@@ -161,8 +156,11 @@ const Project = () => {
                         <a  target='_blank' href="https://github.com/BodiaPutiak/CarRental">GitHub repository</a>
                     </div>
                     <p>
-                        Simple langing page for chrome extension called 'BookMark'. There is nothing exciting about this project but I like the design and the layout of the page. So I decided to add it to my small portfolio.
-                        Stay tuned for more details about this exciting addition to my portfolio, and thank you for visiting!
+                        Welcome to CarRental, your go-to destination for exploring a wide range of available cars for rental. Our multi-page application is designed to provide users with a seamless experience as they browse through our diverse assortment of vehicles.
+
+                        With CarRental, you can easily explore various car models, allowing you to make informed decisions about which car best suits your needs. Whether you're looking for a compact sedan, a spacious SUV, or a sleek luxury vehicle, our platform has something for everyone.
+
+                        Using React, SCSS, and HTML, we've crafted an intuitive interface that prioritizes user experience. Our commitment to best React practices ensures that the source code is not only robust but also highly maintainable. By dividing the project into reusable components, we've eliminated the need for copying and pasting, resulting in cleaner and more efficient code.
                     </p>
                 </div>
             </div>
