@@ -44,7 +44,9 @@ const Project = () => {
                 </div>
                 <div className="text-container">
                     <h1>Sptify Music Controller</h1>
-                    <a  target='_blank' href="https://github.com/BodiaPutiak/Spotify-music-controller">GitHub repository</a>
+                    <div className="link-container">
+                        <a target='_blank' href="https://github.com/BodiaPutiak/Spotify-music-controller">GitHub repository</a>
+                    </div>
                     <p>
                         This is the hardest project that I've done so far. 
                         It is a true full-stack web application. 
