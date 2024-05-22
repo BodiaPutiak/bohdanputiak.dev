@@ -10,7 +10,7 @@ const Home = () => {
             <div className='home-page'>
                 <div className="text-container">
                     <h1>Front-End web Developer </h1>
-                    <p>Hi &#128075;! I'm Bohdan Putiak. A passionate Front-End Developer, who wants to begin his journey in tech. Currently based in Warsaw, Poland. </p>
+                    <p>Hi &#128075;! I'm Bohdan Putiak. A passionate Front-End Developer, who wants to begin his journey in tech.</p>
                 </div>
                 <div className="tilt-container">
                     <Tilt>
